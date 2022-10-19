@@ -7,8 +7,18 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    font-family: "Passion One", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 7rem;
+    color: white;
+    margin: 0;
+    display: inline-block;
+}
+
 h2 {
     font-size: 3rem;
+    color: #F1655C;
 }
 
 h3 {
@@ -49,8 +59,24 @@ a {
     flex: 1;
     background: url("images/amy-shamblen-xwM61TPMlYk-unsplash.jpg") no-repeat center;
     background-size: cover;
-    transform: scaleX(-1);
     min-width: 50%;
+}
+
+.logo {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(233deg) brightness(103%) contrast(101%);
+    width: 100px;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    padding: 10px;
+    margin-top: 200px;
+    box-sizing: border-box;
 }
 
 form {
@@ -101,6 +127,13 @@ input {
 
 input:focus {
     box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+    outline: solid 1px blue;
+    transition: 0.1s linear;
+}
+
+input:focus-visible {
+    outline: solid 1px blue;
+    transition: 0.1s linear;
 }
 
 button {
@@ -110,7 +143,7 @@ button {
     border: none;
     padding: 10px;
     margin-top: 20px;
-    width: 240px;
+    width: 246px;
     height: 45px;
     box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
 
