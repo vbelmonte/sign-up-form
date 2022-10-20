@@ -1,3 +1,5 @@
+let validPassword = false;
+
 function verifyPasswords() {
     let password = document.getElementById("password");
     let confirmPW = document.getElementById("confirm-password");
@@ -9,10 +11,12 @@ function verifyPasswords() {
         password.classList.remove("invalid-pw");
         confirmPW.classList.remove("invalid-pw");
         invalidPWMsg.classList.remove("invalid-pw-msg");
+        validPassword = true;
         console.log("passwords match")
     }
     else {
         // passwords do not match, update input design to indicate mismatch
+        validPassword = false;
         console.log("passwords do not match");
     }
 }
@@ -51,3 +55,9 @@ document.getElementById("confirm-password").addEventListener("keyup", function()
 });
 
 document.getElementById("confirm-password").addEventListener("keyup", verifyPasswords)
+
+document.querySelector("button").addEventListener("click", function(e) {
+    if (!validPassword) {
+        e.preventDefault();
+    }
+})
