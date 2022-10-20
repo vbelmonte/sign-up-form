@@ -1,4 +1,9 @@
 let validPassword = false;
+let firstName = document.getElementById("first-name");
+let lastName = document.getElementById("last-name");
+let email = document.getElementById("email");
+let password = document.getElementById("password");
+let confirmPW = document.getElementById("confirm-password");
 
 function verifyPasswords() {
     let password = document.getElementById("password");
@@ -57,7 +62,10 @@ document.getElementById("confirm-password").addEventListener("keyup", function()
 document.getElementById("confirm-password").addEventListener("keyup", verifyPasswords)
 
 document.querySelector("button").addEventListener("click", function(e) {
-    if (!validPassword) {
+    if (firstName.value === "" || lastName.value === "" || email.value === "" || password.value === "" || confirmPW.value === "") {
+
+    }
+    else if (!validPassword) {
         e.preventDefault();
     }
 })
