@@ -151,6 +151,11 @@ input:focus-visible {
     transition: 0.1s linear;
 }
 
+input:focus:required:invalid {
+    outline-color: red;
+}
+
+
 button {
     background-color: #F1655C;
     color: white;
