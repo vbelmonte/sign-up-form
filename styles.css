@@ -1,0 +1,172 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 12px;
+    color: #1E1E1E;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "Passion One", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 7rem;
+    color: white;
+    margin: 0;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #F1655C;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h2, h3, h4 {
+    margin: 0;
+}
+
+a {
+    color:#F1655C;
+    font-weight: 700;
+}
+
+.form-side {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 50px;
+    background-color: #FFE7D9;
+    padding: 100px 0px;
+}
+
+.form-headline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 70px;
+}
+
+.cta-image {
+    flex: 1;
+    background: url("images/amy-shamblen-xwM61TPMlYk-unsplash.jpg") no-repeat center;
+    background-size: cover;
+    min-width: 50%;
+}
+
+.top {
+    padding-top: 200px;
+    min-height: calc(100vh - 246.8px);
+}
+
+.logo {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(233deg) brightness(103%) contrast(101%);
+    width: 100px;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    padding: 10px;
+    /*margin-top: 200px;*/
+    box-sizing: border-box;
+}
+
+.credits {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.credits > p {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px 70px;
+    gap: 30px;
+
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.account {
+    font-size: 1rem;
+    padding: 0px 70px;
+}
+
+.row {
+    display: flex;
+    gap: 70px;
+}
+
+input,
+label {
+    appearance: none;
+}
+
+label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 2px 0px;
+}
+
+input {
+    font-size: 1rem;
+    border: solid 1px #D9D9D9;
+    border-radius: 4px;
+    padding: 7px;
+    width: 230px;
+}
+
+input:focus {
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+    outline: solid 1px blue;
+    transition: 0.1s linear;
+}
+
+input:focus-visible {
+    outline: solid 1px blue;
+    transition: 0.1s linear;
+}
+
+input:focus:required:invalid {
+    outline-color: red;
+}
+
+
+button {
+    background-color: #F1655C;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    width: 246px;
+    height: 45px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+
+    font-size: 1rem;
+    font-weight: 700;
+}

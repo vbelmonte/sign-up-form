@@ -6,10 +6,70 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Cosmetics Sign-Up Form</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
     </head>  
     <body>
-
-        
+        <div class="cta-image">
+            <div class="top">
+                <div class="logo-box">
+                    <img class="logo" src="images/flower2.svg">
+                    <h1>Cosmetics</h1>
+                </div>
+            </div>
+            <div class="credits">
+                <p>Photo by <a href="https://unsplash.com/@amyshamblen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Amy Shamblen</a> on <a href="https://unsplash.com/s/photos/makeup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+            </div>
+        </div>
+        <div class="form-side">
+            <div class="form-headline">
+                <h2>Sign up to gain early access to releases and new products!</h2>
+                <h3>Members will also receive 15% off on orders totaling $100 or more on their first purchase.</h3>
+            </div>
+            <div class="form">
+                <h4>Become a member today!</h3>
+                <form>
+                    <div class="row">
+                        <div>
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phone-number">Phone Number (Optional)</label>
+                            <input type="tel" id="phone-number" name="phone-number">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="submit" onclick="verifyPasswords()">Create Account</button>
+                    </div>
+                </form>
+            </div>
+            <div class="account">
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
     </body>
     <script src="index.js"></script>
 </html>
