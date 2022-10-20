@@ -203,4 +203,15 @@ button {
 
     font-size: 1rem;
     font-weight: 700;
+    transition: 0.1s linear;
+}
+
+button:hover {
+    background-color: #e2071a;
+}
+
+
+button:active {
+    background-color: white;
+    color: black;
 }
