@@ -155,6 +155,20 @@ input:focus:required:invalid {
     outline-color: red;
 }
 
+.invalid-pw {
+    border: solid 1px red;
+}
+
+.invalid-pw-msg::after {
+    content: "*Passwords do not match";
+    
+    position: relative;
+    top: 55px;
+    left: -60px;
+    text-transform: none;
+    color: red;
+}
+
 
 button {
     background-color: #F1655C;
